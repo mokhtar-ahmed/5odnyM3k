@@ -14,6 +14,8 @@ import org.apache.http.util.EntityUtils;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import com.iti.jets.carpoolingV1.common.User;
+import com.iti.jets.carpoolingV1.synccontactsactivity.SyncContactsActivity;
 import com.iti.jets.carpoolingV1.synccontactsactivity.SyncContactsController;
 
 import android.os.AsyncTask;
@@ -25,24 +27,25 @@ import android.widget.Toast;
 
 public class SyncContactsServiceHandler {
 	
-	private HttpConstants httpContsantshandler;
+	
 	private String webserviceURI;
 	private JSONArray jsArray;
 	private String returnService;
+	private SyncContactsActivity syncContactsActivity;
 	public SyncContactsServiceHandler()
 	{
-		httpContsantshandler = new HttpConstants();
-		webserviceURI = httpContsantshandler.getWebserviceURI();
+		
+		
 			
 	}
 	
-	
-
-	public void connectToWebService(JSONArray array)
+	public void connectToWebService(JSONArray array,SyncContactsActivity syncContactsActivity, String url)
 	{
+		webserviceURI = url;
 		this.jsArray = array;
 		SyncContactsWebserviceAsyncTask task = new SyncContactsWebserviceAsyncTask();
 		task.execute(webserviceURI);
+		this.syncContactsActivity  = syncContactsActivity;
 		
 	}
 	
@@ -76,8 +79,10 @@ public class SyncContactsServiceHandler {
         protected void onPostExecute(String result) {
               
         	SyncContactsController controller = new SyncContactsController();
+        	Toast.makeText(syncContactsActivity.getApplicationContext(), "FROM SERVICE HANDLER", Toast.LENGTH_LONG).show();
+        	Toast.makeText(syncContactsActivity.getApplicationContext(), result, Toast.LENGTH_LONG).show();
+        	syncContactsActivity.getResultFromService(result);
         	
-        	controller.getServiceData(result);
         	
         	
         }

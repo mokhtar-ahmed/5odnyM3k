@@ -28,18 +28,17 @@ public class SyncContactsController {
 	private ArrayList<String> contactListTemp = new ArrayList<String>();
 	private JSONArray contactListJSArray;
 	private JsonConverter jsonConverterObject;
-	private HttpConstants httpContsantshandler;
 	private SyncContactsServiceHandler syncContactsHanlerObject;
-	private String uri = "http://192.168.1.4:8088/Carpoolingbackend/services/synccontactsservice/sync";
+	private String url = HttpHandlerUtil.SERVER_URL+HttpHandlerUtil.SYNC_CONTACTS_URL;
 	private ArrayAdapter<String> arrayadapter;
 	ContentResolver contentResolver;
-	private static ArrayList<User> registeredFriendsList;
+	
 
 	public SyncContactsController()
 	{
 		
 	}
-	public SyncContactsController ( ContentResolver contentResolver ){
+	public SyncContactsController ( ContentResolver contentResolver , SyncContactsActivity syncContactsActivity){
 		
 		this.contentResolver = contentResolver;
 		contactListJSArray = new JSONArray();
@@ -47,12 +46,9 @@ public class SyncContactsController {
 		contactListNumber = this.fetchContacts();
 		//Converting ArrayList To JSONarray
 		jsonConverterObject = new JsonConverter();
-		contactListJSArray = jsonConverterObject.arrayListToJSONArray(contactListNumber); 
-		httpContsantshandler = new HttpConstants();
-		httpContsantshandler.setWebserviceURI(uri);
-		
+		contactListJSArray = jsonConverterObject.arrayListToJSONArray(contactListNumber); 	
 		syncContactsHanlerObject = new SyncContactsServiceHandler();
-		syncContactsHanlerObject.connectToWebService(contactListJSArray);
+		syncContactsHanlerObject.connectToWebService(contactListJSArray,syncContactsActivity,url);
 
 	}
 	
@@ -104,34 +100,5 @@ public class SyncContactsController {
         return  contactListTemp;
 }
 	
-	  public void getServiceData(String result)
-      {
-		  registeredFriendsList = new ArrayList<User>();
-		  
-      	try {
-			JSONArray registeredFriendsJsArray = new JSONArray(result);
-			for(int i=0;i<registeredFriendsJsArray.length();i++)
-			{
-				JSONObject jsObj = registeredFriendsJsArray.getJSONObject(i);
-				System.out.println(jsObj);
-				User tempUser = new User();
-				tempUser.setName(jsObj.getString("name"));
-				tempUser.setPhone(jsObj.getString("phone"));
-				tempUser.setUserId(jsObj.getInt("id"));
-				registeredFriendsList.add(tempUser);
-				System.out.println("Size"+"  "+registeredFriendsList.size());
-				
-			}
-	
-		} catch (JSONException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-			
-		}
-
-		  
-      }
-      
-
 
 }

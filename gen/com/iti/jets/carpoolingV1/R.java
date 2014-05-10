@@ -8,7 +8,25 @@
 package com.iti.jets.carpoolingV1;
 
 public final class R {
+    public static final class array {
+        public static final int gender_array=0x7f080000;
+        /**  Nav Drawer List Item Icons 
+ Keep them in order as the titles are in 
+         */
+        public static final int nav_drawer_icons=0x7f080002;
+        /**  Nav Drawer Menu Items 
+         */
+        public static final int nav_drawer_items=0x7f080001;
+    }
     public static final class attr {
+    }
+    public static final class color {
+        public static final int counter_text_bg=0x7f040004;
+        public static final int counter_text_color=0x7f040005;
+        public static final int list_background=0x7f040001;
+        public static final int list_background_pressed=0x7f040002;
+        public static final int list_divider=0x7f040003;
+        public static final int list_item_title=0x7f040000;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -17,61 +35,186 @@ public final class R {
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f040000;
-        public static final int activity_vertical_margin=0x7f040001;
+        public static final int activity_horizontal_margin=0x7f060000;
+        public static final int activity_vertical_margin=0x7f060001;
     }
     public static final class drawable {
-        public static final int bg1=0x7f020000;
-        public static final int bgn7=0x7f020001;
-        public static final int calendaricon=0x7f020002;
-        public static final int ic_launcher=0x7f020003;
-        public static final int photo=0x7f020004;
+        public static final int activity_splash=0x7f020000;
+        public static final int addcircle=0x7f020001;
+        public static final int addf1=0x7f020002;
+        public static final int bg1=0x7f020003;
+        public static final int bgn7=0x7f020004;
+        public static final int bstyle=0x7f020005;
+        public static final int cimg=0x7f020006;
+        public static final int delete=0x7f020007;
+        public static final int drawable_title_shape=0x7f020008;
+        public static final int edit=0x7f020009;
+        public static final int event_back=0x7f02000a;
+        public static final int facebook=0x7f02000b;
+        public static final int google=0x7f02000c;
+        public static final int home_back=0x7f02000d;
+        public static final int ic_action_call=0x7f02000e;
+        public static final int ic_action_edit=0x7f02000f;
+        public static final int ic_action_email=0x7f020010;
+        public static final int ic_action_locate=0x7f020011;
+        public static final int ic_action_share=0x7f020012;
+        public static final int ic_action_user=0x7f020013;
+        public static final int ic_launcher=0x7f020014;
+        public static final int ic_people=0x7f020015;
+        public static final int l=0x7f020016;
+        public static final int login_or_register_back=0x7f020017;
+        public static final int logo=0x7f020018;
+        public static final int p=0x7f020019;
+        public static final int p1=0x7f02001a;
+        public static final int p10=0x7f02001b;
+        public static final int p11=0x7f02001c;
+        public static final int p12=0x7f02001d;
+        public static final int p13=0x7f02001e;
+        public static final int p14=0x7f02001f;
+        public static final int p2=0x7f020020;
+        public static final int p3=0x7f020021;
+        public static final int p4=0x7f020022;
+        public static final int p5=0x7f020023;
+        public static final int p6=0x7f020024;
+        public static final int p7=0x7f020025;
+        public static final int p8=0x7f020026;
+        public static final int p9=0x7f020027;
+        public static final int photo=0x7f020028;
+        public static final int round=0x7f020029;
+        public static final int rounded_corners=0x7f02002a;
+        public static final int slide_menu_back=0x7f02002b;
+        public static final int small_logo=0x7f02002c;
+        public static final int splash_screen=0x7f02002d;
+        public static final int stitle5=0x7f02002e;
+        public static final int text_back=0x7f02002f;
+        public static final int tick=0x7f020030;
+        public static final int tick2=0x7f020031;
+        public static final int tick3=0x7f020032;
+        public static final int title1=0x7f020033;
+        public static final int title2=0x7f020034;
+        public static final int title3=0x7f020035;
+        public static final int title4=0x7f020036;
+        public static final int title6=0x7f020037;
     }
     public static final class id {
-        public static final int LinearLayout1=0x7f080000;
-        public static final int LinearLayout2=0x7f08000b;
-        public static final int NametextView=0x7f080008;
-        public static final int ScrollView1=0x7f08000e;
-        public static final int action_settings=0x7f080011;
-        public static final int contactTextView1=0x7f08000f;
-        public static final int dateEditText=0x7f080002;
-        public static final int dateTextView=0x7f08000c;
-        public static final int doneBtn=0x7f080003;
-        public static final int editdateImgView=0x7f08000d;
-        public static final int editnameImgView=0x7f080009;
-        public static final int menu_settings=0x7f080010;
-        public static final int saveBtn=0x7f080005;
-        public static final int textView1=0x7f080007;
-        public static final int textView3=0x7f08000a;
-        public static final int textView5=0x7f080001;
-        public static final int userImgView=0x7f080006;
-        public static final int usernameEditText=0x7f080004;
+        public static final int EmailTxt=0x7f0a001f;
+        public static final int FrameLayout1=0x7f0a001b;
+        public static final int LinearLayout1=0x7f0a0000;
+        public static final int LinearLayout11=0x7f0a001c;
+        public static final int LinearLayout2=0x7f0a0003;
+        public static final int LinearLayout3=0x7f0a001e;
+        public static final int LinearLayout5=0x7f0a0025;
+        public static final int Loginbutton=0x7f0a0019;
+        public static final int NametextView=0x7f0a0010;
+        public static final int PhoneTxt=0x7f0a0020;
+        public static final int ScrollView1=0x7f0a0016;
+        public static final int TableLayout1=0x7f0a0029;
+        public static final int action_settings=0x7f0a0034;
+        public static final int addCircle=0x7f0a002f;
+        public static final int addCircleBtn=0x7f0a0006;
+        public static final int addFriendBtn=0x7f0a0032;
+        public static final int addFriendImgView=0x7f0a0009;
+        public static final int chkbox=0x7f0a002c;
+        public static final int circleImage=0x7f0a0031;
+        public static final int circleImgView=0x7f0a0002;
+        public static final int circleNameTextView=0x7f0a0008;
+        public static final int circleNameTxt=0x7f0a0005;
+        public static final int circleNameTxtlabel=0x7f0a0004;
+        public static final int circlesBtn=0x7f0a0015;
+        public static final int contactTextView1=0x7f0a002d;
+        public static final int dateEditText=0x7f0a000a;
+        public static final int dateTextView=0x7f0a0013;
+        public static final int dateTxt=0x7f0a0022;
+        public static final int deleteCircle=0x7f0a0030;
+        public static final int doneBtn=0x7f0a000b;
+        public static final int editdateImgView=0x7f0a0014;
+        public static final int editnameImgView=0x7f0a0011;
+        public static final int femaleRadioBtn=0x7f0a0024;
+        public static final int header=0x7f0a002e;
+        public static final int list=0x7f0a0007;
+        public static final int loginBtn=0x7f0a0027;
+        public static final int maleRadioBtn=0x7f0a0023;
+        public static final int menu_settings=0x7f0a0033;
+        public static final int nameTxt=0x7f0a0021;
+        public static final int passwordTxt=0x7f0a0018;
+        public static final int phoneTxt=0x7f0a002b;
+        public static final int progressBar1=0x7f0a0028;
+        public static final int registerBtn=0x7f0a0026;
+        public static final int registerButton=0x7f0a001a;
+        public static final int saveBtn=0x7f0a000d;
+        public static final int tableRow1=0x7f0a002a;
+        public static final int textView1=0x7f0a000f;
+        public static final int textView3=0x7f0a0012;
+        public static final int textView5=0x7f0a0001;
+        public static final int userImage=0x7f0a001d;
+        public static final int userImgView=0x7f0a000e;
+        public static final int usernameEditText=0x7f0a000c;
+        public static final int usernameTxt=0x7f0a0017;
     }
     public static final class layout {
-        public static final int activity_edit_date=0x7f030000;
-        public static final int activity_edit_name=0x7f030001;
-        public static final int activity_edit_profile=0x7f030002;
-        public static final int activity_main=0x7f030003;
-        public static final int activity_sync_contacts=0x7f030004;
-        public static final int activity_sync_contacts2=0x7f030005;
+        public static final int activity_add_circle=0x7f030000;
+        public static final int activity_allcircles_list=0x7f030001;
+        public static final int activity_circle_users=0x7f030002;
+        public static final int activity_edit_date=0x7f030003;
+        public static final int activity_edit_name=0x7f030004;
+        public static final int activity_edit_profile=0x7f030005;
+        public static final int activity_go_to_circles=0x7f030006;
+        public static final int activity_login=0x7f030007;
+        public static final int activity_main=0x7f030008;
+        public static final int activity_options=0x7f030009;
+        public static final int activity_registeration=0x7f03000a;
+        public static final int activity_splash=0x7f03000b;
+        public static final int activity_sync_contacts=0x7f03000c;
+        public static final int activity_sync_contacts2=0x7f03000d;
+        public static final int custom_title_bar=0x7f03000e;
+        public static final int customlist_circles=0x7f03000f;
+        public static final int round=0x7f030010;
+        public static final int rounded_corners=0x7f030011;
+        public static final int sync_contacts_view=0x7f030012;
+        public static final int test=0x7f030013;
     }
     public static final class menu {
-        public static final int activity_edit_date=0x7f070000;
-        public static final int activity_edit_name=0x7f070001;
-        public static final int activity_edit_profile=0x7f070002;
-        public static final int activity_sync_contacts=0x7f070003;
-        public static final int main=0x7f070004;
+        public static final int activity_sync_contacts=0x7f090000;
+        public static final int main=0x7f090001;
     }
     public static final class string {
-        public static final int DatePicker=0x7f050008;
-        public static final int action_settings=0x7f050001;
-        public static final int app_name=0x7f050000;
-        public static final int hello_world=0x7f050002;
-        public static final int menu_settings=0x7f050003;
-        public static final int title_activity_edit_date=0x7f050007;
-        public static final int title_activity_edit_name=0x7f050006;
-        public static final int title_activity_edit_profile=0x7f050005;
-        public static final int title_activity_sync_contacts=0x7f050004;
+        public static final int DatePicker=0x7f070008;
+        public static final int action_settings=0x7f070001;
+        public static final int app_name=0x7f070000;
+        public static final int circles=0x7f07001e;
+        public static final int date=0x7f070017;
+        /**  Content Description 
+         */
+        public static final int desc_list_item_icon=0x7f070021;
+        public static final int email=0x7f07000f;
+        public static final int event_name=0x7f07001d;
+        public static final int facebook=0x7f070014;
+        public static final int from=0x7f07001b;
+        public static final int gender=0x7f070018;
+        public static final int gender_prompt=0x7f070019;
+        public static final int google=0x7f070015;
+        public static final int hello_world=0x7f070002;
+        public static final int login=0x7f070012;
+        public static final int menu_settings=0x7f070003;
+        public static final int name=0x7f070016;
+        public static final int no_of_slots=0x7f07001f;
+        public static final int notification=0x7f07001a;
+        public static final int password=0x7f070010;
+        public static final int phone=0x7f070011;
+        public static final int register=0x7f070013;
+        public static final int search_Result=0x7f070020;
+        public static final int title_activity_add_circle=0x7f07000e;
+        public static final int title_activity_allcircles_list=0x7f07000a;
+        public static final int title_activity_circle_users=0x7f07000b;
+        public static final int title_activity_edit_date=0x7f070007;
+        public static final int title_activity_edit_name=0x7f070006;
+        public static final int title_activity_edit_profile=0x7f070005;
+        public static final int title_activity_go_to_circles=0x7f070009;
+        public static final int title_activity_options=0x7f070022;
+        public static final int title_activity_sync_contacts=0x7f070004;
+        public static final int title_circle_activity=0x7f07000c;
+        public static final int title_sync_contacts_view=0x7f07000d;
+        public static final int to=0x7f07001c;
     }
     public static final class style {
         /** 
@@ -95,10 +238,12 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f060000;
+        public static final int AppBaseTheme=0x7f050002;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f060001;
+        public static final int AppTheme=0x7f050003;
+        public static final int CustomWindowTitleBarBG=0x7f050000;
+        public static final int TitleBarTheme=0x7f050001;
     }
 }
